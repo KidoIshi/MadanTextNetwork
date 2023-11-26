@@ -1,0 +1,15 @@
+Package: MadanTextNetwork
+Type: Package
+Title: Persian Textmining Tool for Co-Occurrence_Network 
+Version: 0.1.0
+Authors@R: c(
+    person("Kido", "Ishikawa", email = "kido.ishikawa6@gmail.com", role = c("aut", "cre")),
+    person("Hasan", "Khosravi", email = "hasan.khosravi2010@yahoo.com", role = c("aut")))
+Description: MadanText_co-occurrence_network is an open-source software designed specifically for text mining in the Persian language. It adds co-occurrence network functionality to MadanText. The input file replaces the text format with an Excel format.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
+Depends: R (>= 4.0.0)
+Imports:
+     xlsx, glue, lattice, stopwords,textmineR, tidytext, tidyr, udpipe, PersianStemmer, shiny (>= 1.8.0), shinythemes, tm, dplyr, hwordcloud, stringr, stringi, topicmodels, igraph, ngram, visNetwork
