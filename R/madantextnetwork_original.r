@@ -1,3 +1,5 @@
+#This is the original version that uses non-ASCII characters without escape sequences.
+
 library(xlsx)
 library(stopwords)
 library(udpipe)
