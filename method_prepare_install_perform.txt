@@ -1,0 +1,63 @@
+By A. and B., the environment is set up for dealing with the Persian language.
+By C., to install the package in R and run the software.
+
+
+
+A.System Local Change
+
+1.Opening the Control Panel:
+Open the 'Control Panel' from the Start menu by searching for it, or press the Windows key + R, type 'control', and press Enter.
+
+2.Clock and Region Settings:
+Select 'Clock and Region' (or 'Clock and Region') from the options in the Control Panel.
+
+3.Regional Settings:
+Inside the 'Clock and Region' settings, select 'Region' (or 'Region').
+
+4.Accessing the Administrative Tab:
+Once the regional settings dialog box opens, move to the 'Administrative' tab.
+
+5.Changing the System Locale:
+Click the 'Change system locale' (or 'Change system locale') button.
+
+6.Selecting Persian (Iran):
+In the system locale change screen, select 'Persian (Iran)' from the dropdown menu. In some cases, select 'Iran (Mashhad)' or a similar option.
+
+7.Applying Changes and Restarting:
+Click OK or the apply button to save the settings.
+
+
+
+B.The Format of "Clock and Regions" to Persian (Iranian) Change
+
+1.Opening the Control Panel:
+Open the 'Control Panel' from the Start menu by searching for it, or press the Windows key + R, type 'control', and press Enter.
+
+2.Clock and Region Settings:
+Select 'Clock and Region' (or 'Clock and Region') from the options in the Control Panel.
+
+3.Regional Settings:
+Inside the 'Clock and Region' settings, select 'Region' (or 'Region').
+
+4.Accessing the Administrative Tab:
+Once the regional settings dialog box opens, move to the 'Format' tab.
+
+5.Changing the System Locale:
+Click the 'Format(F)' button.
+
+6.Selecting Persian (Iran):
+Select 'Persian (Iran)' from the dropdown menu.
+
+
+
+C.Method to Install a Package and to Perform Software
+
+1.Prepare the specified version of the R environment according to 'Description'file. 
+
+2.If packages are not installed, use install.packages() to install packages wriite on 'Description'file. If asked about the language, choose 'Iran (Mashhad) ［https］'. 
+
+3.Run the madantext.r code in RStudio or other IDE. If it's difficult, run madantext_original.r instead. 
+
+4.After execution, when the Shiny user interface opens, upload the text file for analysis, as well as afinn6, con1, and con2. 
+
+5.The analysis results will be displayed.
