@@ -1,6 +1,5 @@
-By A. and B., the environment is set up for dealing with the Persian language.
-By C., to install the package in R and run the software.
-
+By A. and B., the environment will be set up for dealing with the Persian language.
+By C., the package is installed in R and run the software.
 
 
 A.System Local Change
