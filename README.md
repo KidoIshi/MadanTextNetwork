@@ -5,16 +5,23 @@ MadanText_co-occurrence_networkは、ペルシャ語のテキストマイニン�
 
 ## Authors
 This software was developed jointly by Hasan Khosravi and Kido Ishikawa. It is used for Kido Ishikawa's doctoral dissertation for counting frequency and other analyses.
+
 このソフトウェアは、Hasan Khosraviと石川喜堂によって共同開発されました。それは石川喜堂の博士論文の共起ネットワーク分析に使用されています。
 
+
 ## Requirements
-Those are written in Description
+Those are written in Description.
+
 これらはDescriptionファイルに記載されています。
+
 
 ## Licence
 GNU GPL version 3
 
+
 ## Note
-Counting frequency function with txt format is included in the following software
+Counting frequency function with txt format is included in the following software.
+
 txt形式で頻度数をカウントする機能は、以下のソフトウェアに含まれています。
+
 https://github.com/KidoIshi/MadanText
