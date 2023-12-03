@@ -6,7 +6,7 @@ MadanText_co-occurrence_networkは、ペルシャ語のテキストマイニン�
 ## Authors
 This software was developed jointly by Hasan Khosravi and Kido Ishikawa. It is used for Kido Ishikawa's doctoral dissertation for counting frequency and other analyses.
 
-このソフトウェアは、Hasan Khosraviと石川喜堂によって共同開発されました。それは石川喜堂の博士論文の共起ネットワーク分析に使用されています。
+このソフトウェアは、Hasan Khosraviと石川喜堂によって共同開発されました。石川喜堂の博士論文では、共起ネットワーク分析で使用されています。
 
 
 ## Requirements
