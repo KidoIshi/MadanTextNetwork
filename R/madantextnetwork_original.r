@@ -703,58 +703,78 @@ ui<-fluidPage(
         tabPanel("Document Lengths",
                  h1("Summary of Document Lengths"),
                  tableOutput("summary")),
-        tabPanel("Token",
-                 h1("Most Frequent of Tokens"),
-                 br(),br(),
-                 numericInput("MAX","MAX Frequancy",min=0,max=2000,
-                              value = 20,step=5,width='30%'),
-                 numericInput("X",
-                              "Remove Any Tokens That Were In X Or Fewer Documents",
-                              min=0,max=200,value = 0,width='30%'),
-                 numericInput("R1","Remove Any Token You Desire",
-                              min=0,max=20,value = 0,width='30%'),
-                 dataTableOutput("tokenfrequent"),
-                 selectizeInput(
-                   "vec1"
-                   , "Enter the vector you want to delete"
-                   , choices = NULL
-                   , multiple = TRUE
-                   , options = list(create = TRUE),width='30%'
-                 ),
-                 selectizeInput(
-                   "vec2"
-                   , "Enter the old words vector"
-                   , choices = NULL
-                   , multiple = TRUE
-                   , options = list(create = TRUE),width='30%'
-                 ),
-                 selectizeInput(
-                   "vec3"
-                   , "Enter the new words vector"
-                   , choices = NULL
-                   , multiple = TRUE
-                   , options = list(create = TRUE),width='30%'
-                 ),
-                 downloadButton('download1',"Download the data EXCEL"),
-                 downloadButton('download2',"Download the data CSV"),
-                 br(),br(),
-                 br(),br(),
-                 h1("Bar Plot of Tokens"),
-                 plotOutput("plot1"),
-                 br(),br(),
-                 h1("Bar Plot of Tokens on Documents "),
-                 plotOutput("plot2"),
-                 br(),br(),
-                 h1("Word Cloud Token"),
-                 br(),br(),
-                 numericInput("Ncloud",
-                              "MAX Frequancy for Word Cloud of Token",
-                              min=20,max=1000,value=100,
-                              step=10,width='30%'),
-                 br(),br(),
-                 hwordcloudOutput("shinytest", height = "500px"
-                                  ,width="100%")
-        ),
+        #The following code display frequency of all words regardless of the Udpipe package. It is useful for overviewing, but to keep the UI simple, Default is commented out so that it is not displayed.
+        #tabPanel("Token",
+        #         h1("Most Frequent of Tokens"),
+        #         br(),br(),
+        #         downloadButton('download1',"Download the data EXCEL"),
+        #         br(),br(),
+        #         downloadButton('download2',"Download the data CSV"),
+        #         br(),br(),
+        #         dataTableOutput("tokenfrequent"),
+        #         br(),br(),
+        #         h1("Bar Plot of Tokens"),
+        #         plotOutput("plot1"),
+        #         br(),br(),
+        #         h1("Bar Plot of Tokens on Documents "),
+        #         plotOutput("plot2"),
+        #         br(),br(),
+        #         h1("Word Cloud Token"),
+        #         hwordcloudOutput("shinytest", height = "500px"
+        #                          ,width="100%")
+        #),
+        #tabPanel("Token",
+        #         h1("Most Frequent of Tokens"),
+        #         br(),br(),
+        #         numericInput("MAX","MAX Frequancy",min=0,max=2000,
+        #                      value = 20,step=5,width='30%'),
+        #         numericInput("X",
+        #                      "Remove Any Tokens That Were In X Or Fewer Documents",
+        #                      min=0,max=200,value = 0,width='30%'),
+        #         numericInput("R1","Remove Any Token You Desire",
+        #                      min=0,max=20,value = 0,width='30%'),
+        #         dataTableOutput("tokenfrequent"),
+        #         selectizeInput(
+        #           "vec1"
+        #           , "Enter the vector you want to delete"
+        #           , choices = NULL
+        #           , multiple = TRUE
+        #           , options = list(create = TRUE),width='30%'
+        #         ),
+        #         selectizeInput(
+        #           "vec2"
+        #           , "Enter the old words vector"
+        #           , choices = NULL
+        #           , multiple = TRUE
+        #           , options = list(create = TRUE),width='30%'
+        #         ),
+        #         selectizeInput(
+        #           "vec3"
+        #           , "Enter the new words vector"
+        #           , choices = NULL
+        #           , multiple = TRUE
+        #           , options = list(create = TRUE),width='30%'
+        #         ),
+        #         downloadButton('download1',"Download the data EXCEL"),
+        #         downloadButton('download2',"Download the data CSV"),
+        #         br(),br(),
+        #         br(),br(),
+        #         h1("Bar Plot of Tokens"),
+        #         plotOutput("plot1"),
+        #         br(),br(),
+        #         h1("Bar Plot of Tokens on Documents "),
+        #         plotOutput("plot2"),
+        #         br(),br(),
+        #         h1("Word Cloud Token"),
+        #         br(),br(),
+        #         numericInput("Ncloud",
+        #                      "MAX Frequancy for Word Cloud of Token",
+        #                      min=20,max=1000,value=100,
+        #                      step=10,width='30%'),
+        #         br(),br(),
+        #         hwordcloudOutput("shinytest", height = "500px"
+        #                          ,width="100%")
+        #),
         tabPanel("Bigram",
                  h1("Most Frequent of Bigram"),
                  br(),br(),
