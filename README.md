@@ -12,7 +12,7 @@ This software was developed jointly by Hasan Khosravi and Kido Ishikawa. It is u
 ## Requirements
 Those are written in Description.
 
-これらはDescriptionファイルに記載されています。
+実行するために必要なことはDescriptionファイルに記載されています。
 
 
 ## Licence
